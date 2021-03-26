@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+    padding:0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+
+
+a {
+    display:inline-block;
+    text-decoration: none;
+}
+
+
+/********************Start of HERO BANNER******************/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('images/hero-bg.jpg') center /cover no-repeat fixed;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+   
+    color:white;
+}
+
+
+.hero-logo {
+    font-size: 8rem;
+    padding:3rem;
+
+}
+
+.shop-btn {
+    font-size: 3rem;
+    color:inherit;
+    border: 1px solid black;
+    padding: .5rem 1rem;
+}
+
+.hero-quote {
+    font-size: 3rem;
+    padding:3rem;
+    text-transform: capitalize;
+
+}
+
+
+
+/********************End of HERO BANNER******************/
+
+.nav {
+    
+    width: 90%;
+    max-width:1440px;
+    height: 50px;
+   
+    margin: auto;
+   
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 3rem;
+
+    position:sticky;
+    top: 0;
+    z-index: 999;
+
+
+}
+
+.nav-icon,
+.cart-icon {
+    cursor:pointer;
+}
+
+
+
+.cart-btn {
+    position:relative;
+}
+
+
+.cart-notif {
+    padding: 0 .2rem;
+    border-radius: 2px;
+    background: gray;
+    position:absolute;
+    top: -10%;
+    right: 10%;
+
+    font-size: 2.5rem;
+}
+
+
+
+/***********CURRENT FAVORITES***************/
+
+
+.featured-wrapper {
+
+    width: 90%;
+    max-width: 1170px;
+   
+    margin: auto;
+    padding: 15rem 0;
+
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+}
+
+.featured-inner {
+    /* max-width: 500px; */
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  
+
+}
+
+.row-gap {
+    margin: 4rem 0;
+}
+
+/***FEATURE TEXT***/
+.feature-btn {
+    font-size: 2rem;
+    margin: 2rem 0;
+   
+}
+
+.feature-title {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+
+/****CAROUSEL*****/
+
+
+.feature-carousel {
+    width: 100%;
+  
+}
+
+
+.carousel {
+    width: 100%; 
+    max-width: 400px;
+    /* min-height: 50rem;
+    max-height: 60rem; */
+    /* margin: 0 1rem; */
+    overflow: hidden;
+    cursor: url(icons/grab.png), auto;
+
+
+}
+
+.product-wrapper {
+   
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.product-image {
+   display:block;
+   width: 100%;
+   opacity: 0.8;
+    
+    
+}
+
+.product-image:hover {
+    transform:scale(1.2);
+    opacity: 1;
+    transition:.3s ease;
+}
+
+.product-info {
+    display:block;
+    font-size: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+.product-info > * {
+    margin: 0 1rem;
+}
+
+/* .product-price {
+    display:inline-block;
+} */
+
+
+.add-to-cart {
+    display:block;
+    padding: 1rem;
+    background: gray;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .featured-wrapper {
+        align-items: center;
+        /* padding:20rem 0; */
+        height: auto;
+
+       
+    }
+
+    .featured-inner {
+        flex-direction:row;
+        justify-content: center;
+        height:auto;
+       
+
+    }
+        
+    .feature-text {
+        width: 40%;
+        z-index: 10;
+    }
+    
+    .feature-carousel {
+        width: 60%;
+        margin: auto;
+    
+    }
+
+
+    .product-image {
+        object-fit: contain;
+    }
+
+
+
+}
+
+
+
+
