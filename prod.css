@@ -1,0 +1,180 @@
+li {
+    list-style: none;
+}
+
+/******COLLECTIONS*********/
+
+
+.collections {
+    width: 100%;
+    max-width: 700px;
+    margin: 4rem auto;
+    /* border: 2px solid black; */
+}
+
+.category-tab {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: max-content;
+    margin:auto;
+    padding-bottom:1rem;
+    border-bottom: 2px solid black;
+  
+}
+
+.category {
+    padding: .8rem;
+    margin: 0 1rem;
+   
+    cursor: pointer;
+    /* background-color: black; 
+    color:brown; */
+    font-size: 1.8rem;
+}
+
+
+.js-active {
+    background-color: black; 
+    color:brown;
+    transition: background .5s;
+}
+
+.hide {
+    display:none;
+}
+
+.show {
+    display:block;
+}
+/*************PRODUCT GALLERY****************/
+
+.product {
+    display:block;
+    width: 100%;
+    border: 2px solid brown;
+}
+
+/* .product:hover {
+    transform:translateY(-5px);
+    transition: .3s ease-in;
+} */
+
+.product-gallery {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 1rem;
+  
+}
+
+.product-wrapper {
+    position:relative;
+  
+}
+
+.product-wrapper,
+.product-wrapper > * {
+    transition: .5s;
+}
+
+.item-price {
+    position:absolute;
+    top:10%;
+    left: 10%;
+   
+}
+
+/* .item-price,
+.atc-positioning {
+    opacity:  0.5;
+ 
+} */
+
+.atc-positioning {
+    position:absolute;
+    bottom: 15%;
+    right: 5%;
+}
+
+/* .product-wrapper:hover .item-price{
+    left: 10%;
+    transition: 0.5s;
+} */
+
+
+/* .product-wrapper:hover .atc-positioning {
+    animation: slide-in .5s 1s;
+}
+.product-wrapper:hover .atc-positioning {
+    right: 5%;
+    transition: 0.5s;
+}
+
+@keyframes slide-in {
+    0% {opacity: 0.4;}
+    100% {opacity: 1;}
+  
+} */
+
+
+
+@media screen and (min-width: 768px) {
+
+
+
+    /**INIT POSITIONING**/
+
+    .item-price {
+        /* position:absolute;
+        top:10%; */
+        left: -20%;
+       
+    }
+    
+    /* .item-price,
+    .atc-positioning {
+        opacity:  0.5;
+     
+    } */
+    
+    .atc-positioning {
+        /* position:absolute;
+        bottom: 15%; */
+        right: -50%;
+    }
+
+
+    /***HOVER***/
+    
+    .product-wrapper:hover .item-price{
+        left: 10%;
+        /* transition: 0.5s; */
+    }
+    
+    .product-wrapper:hover .atc-positioning {
+        right: 5%;
+        /* transition: 0.5s; */
+    }
+    
+    /**ANIMATION**/
+    
+    .product-wrapper:hover .atc-positioning {
+        animation: slide-in .5s 1s;
+    }
+
+    @keyframes slide-in {
+        0% {opacity: 0.4;}
+        100% {opacity: 1;}
+      
+    }
+
+
+   
+  
+
+}
