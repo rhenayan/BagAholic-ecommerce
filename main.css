@@ -10,8 +10,6 @@ html {
 }
 
 
-
-
 a {
     display:inline-block;
     text-decoration: none;
@@ -209,7 +207,7 @@ a {
 
 
 .add-to-cart {
-    display:block;
+    display:inline-block;
     padding: 1rem;
     background: gray;
     text-transform: capitalize;
@@ -257,6 +255,7 @@ a {
 
 
 }
+
 
 
 
